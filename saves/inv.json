@@ -44,7 +44,7 @@
         "name": "Raw rabbit meat",
         "type": "food",
         "healing_amount": 5,
-        "quantity": 1,
+        "quantity": 3,
         "max_quantity": 5,
         "price": 2,
         "price_sell": 1,

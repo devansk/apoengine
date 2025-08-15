@@ -9,37 +9,7 @@ import json
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'misc')))
 from log_system import log
-'''
-    CO DZIAŁA?
-        -> klasa gracz
-            - obsługa wczytywania i zapisywania stanu gracza
-            - możliwość dodawania przedmiotów do ekwipunku
-            - level up postaci
-            - rozwoj statystyk gracza
-        
-        -> klasa przedmiot
-            - obsługa przedmiotów, wczytywanie z pliku
-            - możliwość dodawania przedmiotów do ekwipunku gracza
-        
-        -> klasa ekwipunek
-            - obsługa ekwipunku, wczytywanie i zapisywanie stanu ekwipunku
-            - możliwość wyświetlania ekwipunku gracza
-            - możliwość dodawania przedmiotów do ekwipunku gracza
-            - obsługa ilości przedmiotów w ekwipunku (np. 2x mikstura zdrowia)       
-'''
-'''
-    CO ROBIE?
-        -> dodać możliwość zapisu 3 postaci gracza
-        -> dodać możliwość wyboru postaci gracza
-        -> dodać 2 dodatkowe ekwipunki dla 2 pozostałych postaci
-        -> klasa monster [80%]
-        -> klasa walka [60%]
-        -> klasa mapa
-        -> klasa quest
-        -> klasa sklep
 
-
-'''
 def main():
     #gracz1 = Gracz()
     gracz1 = Gracz.load_from_file()

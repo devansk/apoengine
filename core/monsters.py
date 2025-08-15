@@ -34,22 +34,22 @@ class Monster:
         
         # Jeśli podano tylko id, pobierz dane z Monsters
         if id is not None and name == "Monster" and health == 100 and health_max == 100 and level == 1 and experience == 0 and balance == 0 and attack == 10 and defense == 5 and description == "A scary monster" and drop_chance == 0.1 and type == None and drop_items is None:
-            quest_data = Monsters().get_monster_by_id(id)
-            if quest_data:
-                self.id = quest_data.id
-                self.name = quest_data.name
-                self.health = quest_data.health
-                self.health_max = quest_data.health_max
-                self.level = quest_data.level
-                self.experience = quest_data.experience
-                self.balance = quest_data.balance
-                self.attack = quest_data.attack
-                self.defense = quest_data.defense
-                self.description = quest_data.description
-                self.drop_chance = quest_data.drop_chance
-                self.drop_items = quest_data.drop_items
-                self.damage = quest_data.damage
-                self.type = quest_data.type
+            monster_data = Monsters().get_monster_by_id(id)
+            if monster_data:
+                self.id = monster_data.id
+                self.name = monster_data.name
+                self.health = monster_data.health
+                self.health_max = monster_data.health_max
+                self.level = monster_data.level
+                self.experience = monster_data.experience
+                self.balance = monster_data.balance
+                self.attack = monster_data.attack
+                self.defense = monster_data.defense
+                self.description = monster_data.description
+                self.drop_chance = monster_data.drop_chance
+                self.drop_items = monster_data.drop_items
+                self.damage = monster_data.damage
+                self.type = monster_data.type
                 log.log(f"Monster {self.name} created with level {self.level}.", 2)
             else:
                 # Brak danych, domyślne wartości
@@ -114,6 +114,10 @@ class Monster:
         return self.health
     def set_health(self, health):
         self.health = health
+        if self.health < 0: 
+            self.health = 0 #health nie moze byc mniejsze niz 0
+            log.log(f"{self.get_name()} [{self.get_level()}lv] nie zyje.",2)
+            return
         log.log(f"Zmieniono zdrowie {self.get_name()} na: {self.health}", 2)
     
     def get_health_max(self):
