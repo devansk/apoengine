@@ -223,4 +223,5 @@ class Gracz:
         inv.items_remove(item_id, typ, quantity)
         self.eq = inv # Aktualizacja ekwipunku po usunięciu itemu
         #log.log(f"Usunięto {quantity} sztuk itemu o ID {item_id} z ekwipunku gracza {self.name}.", 4)
+
         

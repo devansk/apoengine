@@ -1,10 +1,12 @@
-2025-08-15 14:20 — Wersja: 0.12
+// ...existing code...
+2025-08-15 18:20 — Wersja: 0.12
 - zooptymalizowano % dropów
 - utworzono plik changelog
 - poprawiono zwracany wynik z walki
 - poprawiono czytelnosc kodu
-- poprawiono błedy
+- poprawiono ogólne błedy
 - zooptymalizowano kod
+- wdrożono walidację zdrowia do min 0 hp zamiast np -3 hp
 
 Poprzednie zmiany (podsumowanie funkcjonalne)
 - Inicjalizacja projektu i szkielet gry.
@@ -16,8 +18,7 @@ Poprzednie zmiany (podsumowanie funkcjonalne)
 - Mechanika nagród: przyznawanie XP i środków po zwycięstwach.
 - Logowanie zdarzeń do pliku saves/logs w ustandaryzowanym formacie.
 
-Wskazówki:
-- Rozważyć walidację zdrowia (min 0) oraz lepsze zaokrąglanie/pulę nagród.
+
 
 '''
     CO DZIAŁA?
@@ -50,3 +51,31 @@ Wskazówki:
 
 
 '''
+
+# Możliwe błędy i TODO — możliwości rozbudowy i optymalizacji
+- Błędy do sprawdzenia:
+  - walidacja i clamp zdrowia: upewnić się, że wszędzie jest min 0 (uniknięcie -4 w logach),
+  - duplikaty zapisu/logowania przy szybkim powtarzaniu akcji (race condition),
+  - spójność stanu ekwipunku przy zwiększaniu ilości (stacking),
+  - poprawne zwiększanie/utrzymywanie stanu konta (overflow, wielokrotne dodania),
+  - obsługa błędów I/O (brak pliku, uszkodzony JSON) — powinien być fallback i komunikat,
+  - deterministyczność RNG dla testów (możliwe niestabilne wyniki w jednostkowych).
+- Priorytetowe poprawki:
+  - dodać jednostkowe testy dla mechaniki walki, dropów i zapisu/odczytu,
+  - zabezpieczyć zapis pliku przez lock/atomic write (tmp->rename),
+  - ujednolicić format logów i lokalizację komunikatów (i18n).
+- Optymalizacje / refaktoring:
+  - rozdzielić moduły: player, monster, fight, inventory, io, ui,
+  - dodać typowanie (mypy) i linting (flake8/ruff) dla lepszej jakości kodu,
+  - profilowanie krytycznych ścieżek (drop table, pętle AI) i cache'owanie wyników,
+  - konfigurowalny system dropów (pliki JSON/yaml) zamiast hardcode.
+- Funkcje do rozbudowy:
+  - wieloosobowe zapisy postaci (3 postaci) i wybór postaci w menu,
+  - pełna implementacja klasy map/quest/shop,
+  - rozbudowana klasa walka: statusy, efekty czasowe, umiejętności,
+  - GUI/cli poprawki: lepsze komunikaty, potwierdzenia, undo dla stash/changes,
+  - wersjonowanie save'ów i migracje struktury save (schema version).
+- Dla utrzymania projektu:
+  - wdrożyć CI z testami i lintem,
+  - dodać CHANGELOG zgodny z "Keep a Changelog" i semver,
+  - przygotować dokumentację API/modułów oraz przykładowe
