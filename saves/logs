@@ -191,3 +191,21 @@
 [00:51][29.07.2025][Inventory] - Item added to inventory: Bandage
 [00:51][29.07.2025][Player] - Dodano 40 doświadczenia do gracza Steve.
 [00:51][29.07.2025][Player] - Dodano 20 do stanu konta gracza Steve. Nowy stan konta: 20
+
+[14:03][15.08.2025][Save] - Wczytano dane gracza z pliku: saves/player_save.json
+[14:03][15.08.2025][Player] - Gracz Steve został stworzony.
+[14:03][15.08.2025][Monster] - Monster Forest Wolf created with level 3.
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: 65
+[14:03][15.08.2025][Player] - Zmieniono zdrowie gracza na: 116
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: 50
+[14:03][15.08.2025][Player] - Zmieniono zdrowie gracza na: 111
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: 35
+[14:03][15.08.2025][Player] - Zmieniono zdrowie gracza na: 106
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: 20
+[14:03][15.08.2025][Player] - Zmieniono zdrowie gracza na: 101
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: 5
+[14:03][15.08.2025][Player] - Zmieniono zdrowie gracza na: 96
+[14:03][15.08.2025][Monster] - Zmieniono zdrowie Forest Wolf na: -10
+[14:03][15.08.2025][Fight] - Steve wygrał walkę z Forest Wolf w 6 rundach!
+[14:03][15.08.2025][Player] - Dodano 40 doświadczenia do gracza Steve.
+[14:03][15.08.2025][Player] - Dodano 20 do stanu konta gracza Steve. Nowy stan konta: 20
