@@ -32,7 +32,7 @@ class Fight:
 
             self.monster.set_health(self.monster.health - self.player.attack + self.monster.defense) # Player attacks monster
             if self.monster.health <= 0: # Monster defeated
-                self.winner = "player"
+                self.winner = self.player.get_name()
                 log.log(f"{self.player.get_name()} wygrał walkę z {self.monster.get_name()} w {self.rounds} rundach!", 11)
 
                 self.drop()  # Drop items after monster is defeated
@@ -44,7 +44,7 @@ class Fight:
             if self.monster.health > 0: # Monster attacks player
                 self.player.set_health(self.player.health - self.monster.attack + self.player.defense)
             if self.player.health <= 0: # Player defeated
-                self.winner = "monster"
+                self.winner = self.monster.get_name()
                 log.log(f"{self.monster.get_name()} wygrał walkę z {self.player.get_name()} w {self.rounds} rundach!", 11)
                 break
         return self.winner

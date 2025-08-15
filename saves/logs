@@ -51,3 +51,27 @@
 [14:35][15.08.2025][Inventory] - Item Raw rabbit meat quantity increased to 3.
 [14:35][15.08.2025][Player] - Dodano 20 doświadczenia do gracza Steve.
 [14:35][15.08.2025][Player] - Dodano 10 do stanu konta gracza Steve. Nowy stan konta: 10
+
+[14:39][15.08.2025][Save] - Wczytano dane gracza z pliku: saves/player_save.json
+[14:39][15.08.2025][Player] - Gracz Steve został stworzony.
+[14:39][15.08.2025][Monster] - Monster Wild Rabbit created with level 1.
+[14:39][15.08.2025][Monster] - Zmieniono zdrowie Wild Rabbit na: 32
+[14:39][15.08.2025][Player] - Zmieniono zdrowie gracza na: 121
+[14:39][15.08.2025][Monster] - Zmieniono zdrowie Wild Rabbit na: 14
+[14:39][15.08.2025][Player] - Zmieniono zdrowie gracza na: 121
+[14:39][15.08.2025][Monster] - Wild Rabbit [1lv] nie zyje.
+[14:39][15.08.2025][Fight] - Steve wygrał walkę z Wild Rabbit w 3 rundach!
+[14:39][15.08.2025][Player] - Dodano 20 doświadczenia do gracza Steve.
+[14:39][15.08.2025][Player] - Dodano 10 do stanu konta gracza Steve. Nowy stan konta: 10
+
+[14:41][15.08.2025][Save] - Wczytano dane gracza z pliku: saves/player_save.json
+[14:41][15.08.2025][Player] - Gracz Steve został stworzony.
+[14:41][15.08.2025][Monster] - Monster Wild Rabbit created with level 1.
+[14:41][15.08.2025][Monster] - Zmieniono zdrowie Wild Rabbit na: 32
+[14:41][15.08.2025][Player] - Zmieniono zdrowie gracza na: 121
+[14:41][15.08.2025][Monster] - Zmieniono zdrowie Wild Rabbit na: 14
+[14:41][15.08.2025][Player] - Zmieniono zdrowie gracza na: 121
+[14:41][15.08.2025][Monster] - Wild Rabbit [1lv] nie zyje.
+[14:41][15.08.2025][Fight] - Steve wygrał walkę z Wild Rabbit w 3 rundach!
+[14:41][15.08.2025][Player] - Dodano 20 doświadczenia do gracza Steve.
+[14:41][15.08.2025][Player] - Dodano 10 do stanu konta gracza Steve. Nowy stan konta: 10

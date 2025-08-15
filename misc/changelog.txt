@@ -1,6 +1,8 @@
 2025-08-15 14:20 — Wersja: 0.12
 - zooptymalizowano % dropów
 - utworzono plik changelog
+- poprawiono zwracany wynik z walki
+- poprawiono czytelnosc kodu
 - poprawiono błedy
 - zooptymalizowano kod
 
