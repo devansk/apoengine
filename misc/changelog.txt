@@ -1,4 +1,4 @@
-// ...existing code...
+
 2025-08-15 18:20 — Wersja: 0.12
 - zooptymalizowano % dropów
 - utworzono plik changelog
