@@ -25,5 +25,31 @@
         "durability": 100,
         "description": "A simple bandage to stop bleeding.",
         "drop_chance": 0.3
+    },
+    {
+        "id": 0,
+        "name": "Bandage",
+        "type": "healing",
+        "healing_amount": 20,
+        "quantity": 2,
+        "max_quantity": 5,
+        "price": 10,
+        "price_sell": 5,
+        "durability": 100,
+        "description": "A simple bandage to stop bleeding.",
+        "drop_chance": 0.5
+    },
+    {
+        "id": 2,
+        "name": "Raw rabbit meat",
+        "type": "food",
+        "healing_amount": 5,
+        "quantity": 1,
+        "max_quantity": 5,
+        "price": 2,
+        "price_sell": 1,
+        "durability": 100,
+        "description": "Raw meat from a wild rabbit.",
+        "drop_chance": 0.7
     }
 ]

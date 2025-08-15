@@ -1,0 +1,19 @@
+2025-08-15 14:20 — Wersja: 0.12
+- zooptymalizowano % dropów
+- utworzono plik changelog
+- poprawiono błedy
+- zooptymalizowano kod
+
+Poprzednie zmiany (podsumowanie funkcjonalne)
+- Inicjalizacja projektu i szkielet gry.
+- System zapisu/odczytu gracza (saves/player_save.json).
+- Model gracza: imię, zdrowie, doświadczenie, konto.
+- System potworów z poziomami i podstawowymi statystykami.
+- Prosty system walki turowej z logowaniem rund.
+- System dropów i ekwipunku (dodawanie przedmiotów do inventory).
+- Mechanika nagród: przyznawanie XP i środków po zwycięstwach.
+- Logowanie zdarzeń do pliku saves/logs w ustandaryzowanym formacie.
+
+Wskazówki:
+- Rozważyć walidację zdrowia (min 0) oraz lepsze zaokrąglanie/pulę nagród.
+- Jeżeli chcesz, dodam numer wersji semantycznej i format

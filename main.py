@@ -54,7 +54,7 @@ def main():
     #gracz1.save_to_file()  # Save the player's state to a file
 
     # Example of creating a monster
-    monster = Monster(1)  # Load monster with ID 1
+    monster = Monster(0)  # Load monster with ID 1
 
     # Example of starting a fight
     fight = Fight(gracz1, monster)

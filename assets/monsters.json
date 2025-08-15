@@ -11,7 +11,8 @@
             "attack": 5,
             "defense": 2,
             "description": "A healthy rabbit, not very dangerous.",
-            "drop_chance": 0.2
+            "drop_items": [2,0],
+            "drop_chance": 0.8
 
         },
         {
