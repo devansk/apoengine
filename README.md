@@ -1,5 +1,5 @@
 # ApoEngine One - Silnik gry tekstowej ☢️🧟‍♂️
-30.07.2025
+15.08.2025
 
 ## Opis projektu
 Projekt "ApoEngine" to silnik gry tekstowej RPG, w którym gracz wciela się w postać przetrwałego w świecie postapokaliptycznym. Silnik obsługuje system gracza, ekwipunku, przedmiotów, potworów, walki, zadań oraz logowania zdarzeń. 
